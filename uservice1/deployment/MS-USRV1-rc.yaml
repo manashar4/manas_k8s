@@ -18,5 +18,3 @@ spec:
         - name: ms-usrv1
           image: docker.io/manashar4/ms-usrv1:latest
           imagePullPolicy: Always
-      imagePullSecrets:
-        - name: manashar4
