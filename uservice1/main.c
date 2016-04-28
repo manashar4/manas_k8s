@@ -10,10 +10,14 @@ int main()
 	}
 
 	while (1) {
+		sleep(100);
+				printf("\n exiting\n");
+#if 0
 		scanf("%d\n", &exit_val);
 		if (exit_val == 100) {
 				printf("\n exiting\n");
 		}
+#endif
 	}
 
 	return;
