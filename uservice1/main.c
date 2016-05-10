@@ -20,6 +20,7 @@ int main()
 			return;
 		}
 		printf("\n continuing ...%d\n",a);
+		fflush(stdout);
 #if 0
 		scanf("%d\n", &exit_val);
 		if (exit_val == 100) {
