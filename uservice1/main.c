@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 int main()
 {
-	printf("\n Hello World ... ");
 	int a = 10, exit_val = 0;
 
+	printf("\n Hello World ... ");
 	printf("\n \t value is %d\n", a);
 
 	while (1) {
+		system("echo 100 > /tmp/health");
 		sleep(5);
 		printf("\n exiting ...\n");
 #if 0
