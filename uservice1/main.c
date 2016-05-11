@@ -13,8 +13,8 @@ int main()
 	while (1) {
 		sprintf(cmd_str, "echo \"%d,\" >> /tmp/health \n", a++);
 		system (cmd_str);
-		sleep(1);
-		if (a == 30) {
+		sleep(5);
+		if (a == 10000) {
 			system ("rm -rf /tmp/health");
 			printf("\n exiting ...%d\n",a);
 			return;
