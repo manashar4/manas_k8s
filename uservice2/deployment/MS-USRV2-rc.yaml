@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: ms-usrv2
+  name: ms-usrv2
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    name: ms-usrv2
+  template:
+    metadata:
+      labels:
+        name: ms-usrv2
+    spec:
+      containers:
+        - name: ms-usrv2
+          image: docker.io/manashar4/ms-usrv2:latest
+          imagePullPolicy: Always
